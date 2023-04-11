@@ -1,0 +1,325 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/font-awesome.css">
+    <link rel="stylesheet" href="./../css/font-awesome.min.css">
+    <style>
+      /* Import Poppins font from Google Fonts */
+<!--            @import url('https://fonts.googleapis.com/css?family=Montserrat');-->
+<!--            @import url('https://fonts.googleapis.com/css?family=Corbel');-->
+
+<!--            /* Apply Poppins font to all elements */-->
+<!--            * {-->
+<!--                font-family: 'Montserrat', sans-serif;-->
+<!--            }-->
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("file:///android_res/font/montserrat.otf");
+}
+
+            /* Apply Poppins font to all elements */
+            * {
+                font-family: "myFirstFont";
+            }
+            .page{
+                border: 1px solid black;
+                width: 15.8cm;
+                height: 22.28cm;
+                margin: 30mm 45mm 30mm 45mm;
+                padding: 30px 20px;
+                background-image: url("file:///android_res/drawable/resume_bg_one.png");
+                background-repeat: repeat;
+                background-size: cover;
+                       word-break: break-word;
+            }
+            .userimg {
+                text-align: center;
+                padding-top: 30px;
+            }
+            .jobtitle {
+                font-size: 16px;
+
+            }
+            .exp {
+                background-color: rgba(241,226,203,255);
+                padding: 20px 25px
+            }
+            .coloredtext{
+                color: rgba(203,157,108,255);
+                font-size: 26px;
+                font-weight: 200px;
+                margin-bottom: 3px;
+            }
+            .jobstext{
+                color: rgba(65,87,110,255);
+            }
+            .languages{
+                text-align: center;
+            }
+            .progress-bar {
+              position: relative;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #f2f2f2;
+              margin: 0 auto;
+              text-align: center;
+              font-size: 12px;
+              line-height: 150px;
+              color: #555;
+            }
+
+            .progress-bar:after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              border: 5px solid rgba(65,87,110,255);
+              border-top-color: #cc9c6c;
+              border-right-color: #cc9c6c;
+              animation: spin 2s linear infinite;
+              box-sizing: border-box;
+            }
+
+            progress[value] {
+              appearance: none;
+              width: 100%;
+              height: 7px;
+              border-radius: 10px;
+              background-color: #cc9c6c;
+            }
+
+            progress[value]::-webkit-progress-bar {
+              background-color: #cc9c6c;
+              border-radius: 10px;
+            }
+
+            progress[value]::-webkit-progress-value {
+              background-color: rgba(65,87,110,255);
+              border-radius: 10px;
+            }
+
+            progress[value]::-moz-progress-bar {
+              background-color: rgba(65,87,110,255);
+              border-radius: 10px;
+            }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container page">
+    <div class="row">
+        <div class="col-sm-4">
+            <img id="profile"
+                 src="https://img.lovepik.com/free-png/20210926/lovepik-white-stars-png-image_401445556_wh1200.png"
+                 height="200px" width="200px"
+                 style="border-radius: 100px;
+                        border: solid white 10px;"
+            >
+
+            <div>
+                <div style="padding-left: 30px;padding-top: 15px; font-size:7px;">
+
+                    <div class="infoblock1" style="display: flex;">
+                        <img id="phoneImage" src='file:///android_res/drawable/phone_three.png'
+                             width="9px"
+                             height="10px" alt="Image">
+                        &nbsp;&nbsp;&nbsp;
+                        <p id="phone" style="word-break: break-wordwhite-space: nowrap ;">
+                            sarawaltonmhjkl,mbhj@mail.com</p>
+                    </div>
+
+                    <div class="infoblock1" style="display: flex; margin-top:-13px;">
+                        <img id="addressImage" style="margin-top:2px;"
+                             src='file:///android_res/drawable/address_three.png'
+                             width="8px"
+                             height="10px" alt="Image">
+                        &nbsp;&nbsp;&nbsp;
+                        <p id="address" style="word-break: break-word;white-space: nowrap ;margin-left:5px;">
+                            sarawaltonmhjkl,mbhj@mail.com</p>
+                    </div>
+
+                    <div class="infoblock2" style="display: flex; margin-top:-23px;">
+                        <img id="emailImage" style="margin-top:3px;"
+                             src='file:///android_res/drawable/mail_three.png'
+                             width="10px"
+                             height="8px" alt="Image">
+                        &nbsp;&nbsp;&nbsp;
+                        <p id="email" style="word-break: break-wordwhite-space: nowrap ;">
+                            sarawaltonmhjkl,mbhj@mail.com</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-8" style="padding: 15px 35px;">
+            <p id="name" style="font-size: 26px; font-weight:bold; margin: 0px;">
+                Karrin <br/>
+                Zahra
+            </p>
+            <p id="title" style="font-size: 18px;">Graphic Designer</p>
+
+            <div style="margin-left: 10px;">
+                <h2 id="objectiveHead" class="coloredtext"
+                    style="font-size: 12px; margin-top: 45px;">OBJECTIVE</h2>
+                <p id="objective"
+                   style="font-size: 10px; text-align: justify; padding-right: 30px;">Lorem ipsum
+                    dolor
+                    sit, amet consectetur adipisicing elit. Veritatis atque animi accusantium quo
+                    ipsa,
+                    perferendis commodi adipisci! Quo delectus accusantium ipsam architecto, autem
+                    corrupti porro, fugit deserunt repellat laboriosam at!</p>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-7" style="padding-left:65px">
+            <p id="experienceHead" style="font-size: 18px;" class="coloredtext">
+                WORK EXPERIENCE</p>
+            <div id="experience" style="font-size: 10px;">
+                <hr>
+                <div>
+                    <h4>Art Director</h4>
+                    <h6>Company Name | 2020</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                        orci a ex molestie sit amet lorem ipsum dolor sit
+                    </p>
+                </div>
+                <br/>
+
+            </div>
+            <p id="educationHead" style="font-size: 18px;" class="coloredtext">EDUCATION</p>
+            <div id="education" style="font-size: 10px;">
+                <hr>
+                <div>
+                    <h4>Master Degree</h4>
+                    <h6>University Name | 2020-2021</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                        orci a ex molestie sit amet lorem ipsum dolor sit
+                    </p>
+                </div>
+                <br/>
+
+            </div>
+            <br/>
+            <br/>
+
+
+        </div>
+        <div class="col-sm-5 languages">
+            <!--            <p class="coloredtext">SKILLS</p>-->
+
+            <!--            <div class="row" style="padding-left: 35px;">-->
+            <!--                <div class="col-sm-3">-->
+            <!--                    <div class="progress-bar">-->
+            <!--                        <span>50%</span>-->
+            <!--                    </div>-->
+            <!--                    <p style="font-size: 8px; color: rgba(65,87,110,255);">-->
+            <!--                        PHOTOSHOP-->
+            <!--                    </p>-->
+
+            <!--                </div>-->
+            <!--                <div class="col-sm-3">-->
+            <!--                    <div class="progress-bar">-->
+            <!--                        <span>50%</span>-->
+            <!--                    </div>-->
+            <!--                    <p style="font-size: 8px; color: rgba(65,87,110,255);">-->
+            <!--                        ILLUSTRATOR-->
+            <!--                    </p>-->
+
+            <!--                </div>-->
+            <!--                <div class="col-sm-3">-->
+            <!--                    <div class="progress-bar">-->
+            <!--                        <span>50%</span>-->
+            <!--                    </div>-->
+            <!--                    <p style="font-size: 8px; color: rgba(65,87,110,255);">-->
+            <!--                        INDESIGN-->
+            <!--                    </p>-->
+
+            <!--                </div>-->
+
+            <!--            </div>-->
+
+            <div style="padding: 0px 20px; text-align: center;">
+                <p id="skillsHead" style="font-size: 18px;" class="coloredtext">Skills</p>
+                <div id="skills"
+                     style="margin-top: 5px; padding-right:10px;font-size: 10px;text-align: justify;">
+                    <div class="col-sm-5" style="font-size: 14px;">
+                        Photoshop
+                    </div>
+                    <div class="col-sm-7">
+                        <progress value="75" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;padding: 0px 20px; text-align: center;">
+                <p id="hobbiesHead" style="font-size: 18px;" class="coloredtext">Hobbies</p>
+                <p id="hobbies" style="font-size: 10px;text-align: justify;">
+                    style="font-size: 14px;text-align: justify;
+                </p>
+            </div>
+
+            <div style="padding: 0px 20px; text-align: center;">
+                <p id="awardsHead" style="font-size: 18px;" class="coloredtext">Hobbies</p>
+                <p id="awards" style="font-size: 10px;text-align: justify;">
+                    style="font-size: 14px;text-align: justify;
+                </p>
+            </div>
+
+            <div style="padding: 0px 20px; text-align: center;">
+                <p id="certificationHead" style="font-size: 18px;" class="coloredtext">Hobbies</p>
+                <p id="certification" style="font-size: 10px;text-align: justify;">
+                    style="font-size: 14px;text-align: justify;
+                </p>
+            </div>
+
+            <div style="padding: 0px 20px; text-align: center;">
+                <p id="languagesHead" style="font-size: 18px;" class="coloredtext">Languages</p>
+                <p id="languages" style="font-size: 10px;text-align: justify;">
+
+                </p>
+            </div>
+
+            <div style="padding: 0px 20px; text-align: center;">
+                <p id="linksHead" style="font-size: 10px;">Hobbies</p>
+                <p id="links" style="font-size: 10px;text-align: justify;">
+                    style="font-size: 14px;text-align: justify;
+                </p>
+            </div>
+
+            <div>
+                <i class="fa fa-facebook" style="color:#cc9c6c"></i>
+                &nbsp;
+                <i class="fa fa-linkedin" style="color:#cc9c6c"></i>
+                &nbsp;
+                <i class="fa fa-twitter" style="color:#cc9c6c"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+
+</html>
