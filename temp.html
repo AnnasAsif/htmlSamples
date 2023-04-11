@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        page-break-after: always;
+      }
+
+      .content {
+        padding: 1cm;
+        box-sizing: border-box;
+      }
+
+      .overflown {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="content">
+        <h1>Page 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          mattis est non velit commodo efficitur. Donec aliquet nulla risus,
+          eget rhoncus arcu blandit vel. Suspendisse faucibus felis eu purus
+          pellentesque commodo.
+        </p>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+          <li class="overflown">List item 4</li>
+          <li class="overflown">List item 5</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="content">
+        <h1>Page 2</h1>
+        <ul>
+          <li class="overflown">List item 4</li>
+          <li class="overflown">List item 5</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const pages = document.querySelectorAll('.page');
+      const maxHeight = 257; // in mm
+
+      pages.forEach((page) => {
+        let height = 0;
+        let overflownElements = [];
+
+        page.childNodes.forEach((element) => {
+          if (element.offsetHeight + height > maxHeight) {
+            element.classList.add('overflown');
+            overflownElements.push(element);
+          } else {
+            height += element.offsetHeight;
+          }
+        });
+
+        overflownElements.forEach((element) => {
+          const nextPage = document.createElement('div');
+          nextPage.className = 'page';
+
+          const content = document.createElement('div');
+          content.className = 'content';
+
+          nextPage.appendChild(content);
+          content.appendChild(element);
+
+          page.parentNode.insertBefore(nextPage, page.nextSibling);
+        });
+      });
+    </script>
+  </body>
+</html>

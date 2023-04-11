@@ -1,0 +1,427 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../../css/font-awesome.css">
+        <link rel="stylesheet" href="./../../css/font-awesome.min.css">
+        <style>
+            /* Import Poppins font from Google Fonts */
+            @import url('https://fonts.googleapis.com/css?family=Montserrat');
+            @import url('https://fonts.googleapis.com/css?family=Corbel');
+                    
+            /* Apply Poppins font to all elements */
+            * {
+                font-family: 'Montserrat', sans-serif;
+            }
+            .page{
+                border: 1px solid black;
+                width: 15.8cm;
+                height: 22.28cm;
+                margin: 30mm 45mm 30mm 45mm;
+                padding: 30px 20px;
+                background-image: url("./../bgs/CV\ Templates\ BG-03.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .jobtitle {
+                font-size: 16px;
+                
+            }
+            .coloredtext{
+                color: rgba(203,157,108,255);
+                font-size: 22px;
+                font-weight: 200px;
+                margin-bottom: 3px;
+            }
+            .jobstext{
+                color: rgba(65,87,110,255);
+            }
+            .languages{
+                text-align: center;
+            }
+            .progress-bar {
+              position: relative;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #f2f2f2;
+              margin: 0 auto;
+              text-align: center;
+              font-size: 12px;
+              line-height: 150px;
+              color: #555;
+            }
+        
+            .progress-bar:after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              border: 5px solid rgba(65,87,110,255);
+              border-top-color: #cc9c6c;
+              border-right-color: #cc9c6c;
+              animation: spin 2s linear infinite;
+              box-sizing: border-box;
+            }
+            /* Hide second page by default */
+            .page-2-content {
+              opacity: 0;
+            }
+            
+            progress[value] {
+              appearance: none;
+              width: 80%;
+              height: 10px;
+              border-radius: 10px;
+              background-color: #cc9c6c;
+            }
+            
+            progress[value]::-webkit-progress-bar {
+              background-color: #cc9c6c;
+              border-radius: 10px;
+            }
+            
+            progress[value]::-webkit-progress-value {
+              background-color: rgba(65,87,110,255);
+              border-radius: 10px;
+            }
+            
+            progress[value]::-moz-progress-bar {
+              background-color: rgba(65,87,110,255);
+              border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+           
+          <div class="container page">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img 
+                        src="https://img.lovepik.com/free-png/20210926/lovepik-white-stars-png-image_401445556_wh1200.png" 
+                        height="95%" 
+                        width="100%"
+                        style="border-radius: 100px;
+                        border: solid white 10px;"
+                    >
+                    </img>
+                    
+    
+                        
+                </div>
+                <div class="col-sm-8" style="padding: 15px 35px;">
+                    <p style="font-size: 26px; font-weight:bold; margin: 0px; font-family:Corbel;">
+                        Karrin <br/>
+                        Zahra
+                    </p>
+                    <p style="font-size: 18px;">Graphic Designer</p>
+                    
+              </div>
+            </div> 
+            <div class="row">
+                
+                <div class="col-sm-5">
+                    <div style="padding-left: 45px;padding-top: 25px; font-size: 9px;">
+                        
+                        <p style="margin:1px">
+                            <i class="fa fa-volume-control-phone"></i>
+                            &nbsp;&nbsp;
+                            +2 434-232-534234
+                        </p>
+                        <p style="margin:1px">
+                            <i class="fa fa-home"></i>
+                            &nbsp;&nbsp;&nbsp;
+                            Main Street # 32
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                            &nbsp;&nbsp;
+                            sarawalton11@mail.com
+                        </p>
+                        
+                    </div>
+                    
+    
+                        
+                </div>
+                <div class="col-sm-7">
+                    <h2 class="coloredtext" style="font-size: 18px; margin-bottom: 1px;">ABOUT ME</h2>
+                    <p style="font-size: 10px; text-align: justify; padding-right: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis atque animi accusantium quo ipsa, perferendis commodi adipisci! Quo delectus accusantium ipsam architecto, autem corrupti porro, fugit deserunt repellat laboriosam at!</p>
+                    
+              </div>
+            </div>
+             <div class="row">
+                <div class="col-sm-7 page1left" style="padding-left:55px">
+                    <div>
+                        <p id="experienceHead" style="font-size: 18px;" class="coloredtext">
+                            WORK EXPERIENCE</p>
+                        <div id="experience" class="work">
+                            <hr>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Art Director</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">Company Name | 2020</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Art Director</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">Company Name | 2020</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Art Director</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">Company Name | 2020</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Art Director</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">Company Name | 2020</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Art Director</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">Company Name | 2020</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <br/>
+            
+                        </div>
+                        
+                    </div>
+                    <div class="educationBlock">
+                        <p id="educationHead" style="font-size: 18px;" class="coloredtext">EDUCATION</p>
+                        <div id="education" class="education">
+                            <hr>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Master Degree</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">University name | 2020-2021</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <div>
+                                <h6 style="margin-bottom: 1;">Master Degree</h6>
+                                <p style="font-size: 11px; margin-bottom: 1;">University name | 2020-2021</p>
+                                <p style="font-size: 9px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <br/>
+            
+                        </div>
+
+                    </div>
+    
+                        
+                </div>
+                <div class="col-sm-5 page1right">
+                    
+                    <div>
+                        <p class="coloredtext" style="text-align: center;">SKILLS</p>
+                        <p style="font-size: 11px; margin-bottom: 2px; text-align: left; padding-left: 45px">
+                            Photoshop
+                            <br/>
+                            <progress value="75" max="100"></progress>
+                        </p>
+                        <p style="font-size: 11px; margin-bottom: 2px; text-align: left; padding-left: 45px">
+                            Illustrator
+                            <br/>
+                            <progress value="85" max="100"></progress>
+                        </p>
+                        
+
+                    </div>
+        
+                    <div style="margin-top: 10px;padding: 0px 20px; text-align: center;">
+                        <p id="hobbiesHead" style="font-size: 18px;" class="coloredtext">Hobbies</p>
+                        <p id="hobbies" style="font-size: 10px;text-align: justify;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, doloribus tenetur porro, accusantium in quis quas reprehenderit ad consectetur ut.
+                        </p>
+                    </div>
+        
+                    <div style="padding: 0px 20px; text-align: center;">
+                        <p id="awardsHead" style="font-size: 18px;" class="coloredtext">Hobbies</p>
+                        <p id="awards" style="font-size: 10px;text-align: justify;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, doloribus tenetur porro, accusantium in quis quas reprehenderit ad consectetur ut.
+                        </p>
+                    </div>
+        
+                    <div style="padding: 0px 20px; text-align: center;">
+                        <p id="certificationHead" style="font-size: 18px;" class="coloredtext">Hobbies</p>
+                        <p id="certification" style="font-size: 10px;text-align: justify;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, doloribus tenetur porro, accusantium in quis quas reprehenderit ad consectetur ut.
+                        </p>
+                    </div>
+        
+                    <div style="padding: 0px 20px; text-align: center;">
+                        <p id="languagesHead" style="font-size: 18px;" class="coloredtext">Languages</p>
+                        <p id="languages" style="font-size: 10px;text-align: justify;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, doloribus tenetur porro, accusantium in quis quas reprehenderit ad consectetur ut.
+                        </p>
+                    </div>
+        
+                    <div style="padding: 0px 20px; text-align: center;">
+                        <p id="linksHead" style="font-size: 10px;">Hobbies</p>
+                        <p id="links" style="font-size: 10px;text-align: justify;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, doloribus tenetur porro, accusantium in quis quas reprehenderit ad consectetur ut.
+                        </p>
+                    </div>
+        
+                    <div style="text-align: center;">
+                        <i class="fa fa-facebook" style="color:#cc9c6c"></i>
+                        &nbsp;
+                        <i class="fa fa-linkedin" style="color:#cc9c6c"></i>
+                        &nbsp;
+                        <i class="fa fa-twitter" style="color:#cc9c6c"></i>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            
+            
+          </div>
+          
+          <div class="container page-2-content page">
+            <!-- Your second page content goes here -->
+            <div style="height: 290px;">
+
+            </div>
+            <div class="row">
+                <div class="col-sm-7 page2left" style="padding-left:55px">
+                    <div class="more"></div>
+                    <div class="moreContent"></div>
+                    
+                </div>
+                <div class="col-sm-5 page2right" style="">
+                    <div class="moreData"></div>
+                
+                </div>
+
+            </div>
+
+          </div>
+    
+    </body>
+
+    <script>
+        const page1left = document.querySelector('.page1left');
+            const work = document.querySelector('.work');
+            const education = document.querySelector('.educationBlock');
+		    const page2left = document.querySelector('.page2left');
+            var page2Content = document.querySelector('.page-2-content');
+		    const list = page1left.querySelector('.work');
+		    const listItems = list.getElementsByTagName('div');
+		    const numItems = listItems.length;
+		    const pageHeight = page1left.offsetHeight;
+            
+		    const maxPageHeight = 670; // Max height of page 1
+            
+		    let totalHeight = 360;
+            let check = false;
+		    for (let i = numItems - 1; i >= 0; i--) {
+                const li = listItems[i];
+		    	totalHeight += li.offsetHeight;
+                // console.log(totalHeight);
+
+		    	if (totalHeight > maxPageHeight) {
+                    check = true;
+                    console.log(li);
+		    		page2left.querySelector('.more').prepend(li);
+                    page2Content.style.opacity = 1;
+		    	}
+		    }
+            console.log(check);
+            if(check && (work.offsetHeight + 360) + education.offsetHeight > 670){
+                page2Content.style.opacity = 1;
+                page2left.querySelector('.moreContent').append(education)
+            }
+            else{
+                const listItems2 = education.getElementsByTagName('div');
+                const numItems2 = listItems2.length;
+		        const pageHeight = page1left.offsetHeight;
+		        const maxPageHeight = 650; // Max height of page 1
+                
+		        let totalHeight = 360 + work.offsetHeight;
+                if(totalHeight>650){
+                    page2left.querySelector('.moreContent').append(education)
+                    page2Content.style.opacity = 1;
+                }else{
+                    for (let i = numItems2 - 1; i >= 0; i--) {
+                        const li = listItems2[i];
+                        totalHeight += li.offsetHeight;
+    
+                        if (totalHeight > maxPageHeight) {
+                            
+                            page2left.querySelector('.moreContent').prepend(li);
+                            page2Content.style.opacity = 1;
+                        }
+                    }
+
+                }
+            }
+           		
+		
+    </script>
+    <script>
+        // const page1right = document.querySelector('.page1right');
+        //     const aboutme = document.querySelector('.aboutme');
+            const page2right = document.querySelector('.page2right');
+            var page2Content = document.querySelector('.page-2-content');
+		    const list2 = document.querySelector('.page1right');
+		    const listItems2 = list2.getElementsByTagName('div');
+		    const numItems2 = listItems2.length;
+		    // const pageHeight2 = page1right.offsetHeight;
+            console.log(listItems2);
+		    const maxPageHeight2 = 670; // Max height of page 1
+            console.log(maxPageHeight2);
+            
+		    let totalHeight2 = 360;
+            
+            let newarray = []
+            for(let i=numItems2-1; i>=0; i--){
+                newarray.push(listItems2[i]);
+            }
+
+            var temp = [];
+		    for (let i = numItems2-1; i >= 0; i--) {
+                const li = newarray[i];
+		    	totalHeight2 += li.offsetHeight;
+                console.log(totalHeight2);
+
+		    	if (totalHeight2 > maxPageHeight2) {
+                    temp.push(li)
+		    	}
+		    }
+            for(let i=temp.length - 1 ; i>=0; i--){
+                page2right.querySelector('.moreData').prepend(temp[i]);
+                
+                page2Content.style.opacity = 1;
+
+            }
+            
+    </script>
+</html>

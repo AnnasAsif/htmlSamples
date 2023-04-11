@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./../bootstrap.min.css">
+        <link rel="stylesheet" href="./../css/font-awesome.css">
+        <link rel="stylesheet" href="./../css/font-awesome.min.css">
+        <style>
+
+            @font-face {
+    font-family: "myFirstFont";
+    src: url("file:///android_res/font/montserrat.otf");
+}
+
+            /* Apply Poppins font to all elements */
+            * {
+                font-family: "myFirstFont";
+            }
+
+            .page{
+                border: 1px solid black;
+                width: 15.8cm;
+                height: 22.28cm;
+                margin: 30mm 45mm 30mm 45mm;
+                padding: 30px 20px;
+                background-image: url("file:///android_res/drawable/resume_bg_eight.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                word-break: break-word;
+            }
+            
+            progress[value] {
+              appearance: none;
+              width: 60%;
+              height: 8px;
+              border-radius: 10px;
+              background-color: #d7d8ea;
+            }
+            
+            progress[value]::-webkit-progress-bar {
+              background-color: #d7d8ea;
+              border-radius: 10px;
+            }
+            
+            progress[value]::-webkit-progress-value {
+              background-color: #593c8e;
+              border-radius: 10px;
+            }
+            
+            progress[value]::-moz-progress-bar {
+              background-color: #593c8e;
+              border-radius: 10px;
+            }
+        
+            .heading{
+                background-color: #421f61;
+                color: white;
+                width: 170px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                border-radius: 50px;
+                padding: 3px 0px 3px 0px;
+                font-size: 14px;
+                text-align: center;
+            }
+            .circle {
+                margin-top: 8px;
+                padding: 5px;
+                width: 5px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #664697;
+            }
+            .side {
+                margin-top: 3px;
+                padding: 1px;
+                width: 5px;
+                height: 60px;
+                border-left: solid 1px #d8d6db;
+            }
+        </style>
+    </head>
+    <body>
+           
+          <div class="container page">
+            <div class="row" style="height: 180px;">
+                <div class="col-sm-4">
+                    <img
+                            id="profile"
+                        src="https://img.lovepik.com/free-png/20210926/lovepik-white-stars-png-image_401445556_wh1200.png" 
+                        height="180px" 
+                        width="180px"
+                        style="
+                        border: white solid 10px;
+                        border-radius: 150px;"
+                    >
+
+                        
+                </div>
+                <div class="col-sm-8">
+                    <p id="name" style="font-size: 26px; margin-bottom: 3px;
+                    color: white;
+                   ">
+                        <b>NAME SURNAME</b> 
+                    </p>
+                    <p id="title" style="font-size: 17px; color:#b0a2cf; margin-bottom: 3px;">
+                        <b>YOUR PROFESSION</b>
+                    </p>
+                    <p id="objective" style="color: white; font-size: 9px;">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, velit nam beatae sed iusto dignissimos adipisci, voluptatum temporibus provident repellat, blanditiis officia deleniti recusandae numquam tempore ad molestias distinctio excepturi!
+                    </p>
+                    
+                    
+                </div>
+            </div> 
+            <div class="row">
+                
+                <div class="col-sm-4" style="border-right: #d8d6db solid 2px;">
+                    <div style="text-align: center; margin-top: 40px;">
+
+                        <div>
+                            <p id="contactHead" class="sidebarcolored">
+                                CONTACT
+                            </p>
+
+                            <div style="font-size: 8px; padding-left: 10px;display: flex;">
+                                <img id="phoneImage" src='file:///android_res/drawable/phone_eight.png'
+                                     width="17px"
+                                     height="17px" alt="Image">
+                                &nbsp;&nbsp;&nbsp;
+                                <p id="phone" style="text-align: left;margin-top:3px;word-break: break-word">
+                                    sarawaltonmhjkl,mbhj@mail.com</p>
+                            </div>
+
+                            <div style="font-size: 8px; padding-left: 10px;display: flex;margin-top: -5px;">
+
+                                <img id="emailImage"
+                                     src='file:///android_res/drawable/email_eight.png'
+                                     width="17px"
+                                     height="11px" alt="Image">
+                                &nbsp;&nbsp;&nbsp;
+                                <p id="email" style="text-align: left;cword-break: break-word">
+                                    sarawaltonmhjkl,mbhj@mail.com</p>
+
+                            </div>
+
+                            <div style="font-size: 8px; padding-left: 12px;display: flex;margin-top: -5px;">
+                                <img id="addressImage"
+                                     src='file:///android_res/drawable/address_eight.png'
+                                     width="12px"
+                                     height="17px" alt="Image">
+                                &nbsp;&nbsp;&nbsp;
+                                <p id="address"
+                                   style="margin-left:8px;text-align: left;margin-top:2px;word-break: break-word;display: inline">
+                                    sarawaltonmhjkl,mbhj@mail.com</p>
+                            </div>
+
+                        </div>
+
+                        <div id="awardsHead" style="font-size: 10px;color: #421f61;margin-top: 20px;">
+
+                        </div>
+
+                        <div id="hobbiesHead" style="font-size: 10px;color: #421f61;margin-top: 20px;">
+
+                        </div>
+
+                        <div id="certificationHead" style="font-size: 10px;color: #421f61;margin-top: 20px;">
+
+                        </div>
+
+                        <div id="languagesHead" style="font-size: 10px;color: #421f61;margin-top: 20px;">
+
+
+                        </div>
+
+                        <div id="linksHead" style="font-size: 10px;color: #421f61;margin-top: 20px;">
+
+
+                        </div>
+
+
+                    </div>
+                    
+                        
+                </div>
+                <div class="col-sm-8" style="padding-left: 25px; color: #462268;">
+
+                    <div>
+                        <div id="experienceHead" style="display: flex;font-size: 18px">
+                            <img id="experienceImage" src='file:///android_res/drawable/job_eight.png'
+                                 width="40px"
+                                 height="40px" alt="Image">
+                            &nbsp;&nbsp;
+                            <p  style="word-break: break-word;margin-top:5px">
+                                Work Experience</p>
+                        </div>
+
+                        <div id="experience" style="font-size: 10px;">
+                            <hr>
+                            <div>
+                                <h4>Art Director</h4>
+                                <h6>Company Name | 2020</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                    aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <br/>
+                        </div>
+                    </div>
+
+
+                    <div >
+                        <div id="educationHead" style="display: flex;font-size: 18px">
+                            <img id="educationImage" src='file:///android_res/drawable/education_eight.png'
+                                 width="40px"
+                                 height="40px" alt="Image">
+                            &nbsp;&nbsp;
+                            <p  style="word-break: break-word;margin-top:5px">
+                                Education</p>
+                        </div>
+
+                        <div id="education" style="font-size: 10px;">
+                            <hr>
+                            <div>
+                                <h4>Master Degree</h4>
+                                <h6>University Name | 2020-2021</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                    aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <br/>
+
+                        </div>
+
+                    </div>
+
+                    <div >
+                        <div id="skillsHead" style="display: flex;font-size: 18px">
+                            <img id="skillImage" src='file:///android_res/drawable/skill_eight.png'
+                                 width="40px"
+                                 height="40px" alt="Image">
+                            &nbsp;&nbsp;
+                            <p  style="word-break: break-word;margin-top:5px">
+                                Skills</p>
+                        </div>
+
+                        <div id="skills" style="font-size: 10px;">
+                            <hr>
+                            <div>
+                                <h4>Master Degree</h4>
+                                <h6>University Name | 2020-2021</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                    aliquam
+                                    orci a ex molestie sit amet lorem ipsum dolor sit
+                                </p>
+                            </div>
+                            <br/>
+
+                        </div>
+
+                    </div>
+
+              </div>
+            </div>
+            
+          </div>
+    
+    </body>
+
+</html>
