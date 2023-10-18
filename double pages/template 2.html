@@ -66,7 +66,18 @@
               border-radius: 10px;
             }
         
-            
+            /* Hide second page by default */
+            .page-2-content {
+              opacity: 0;
+              border: 1px solid black;
+                width: 15.8cm;
+                height: 22.28cm;
+                margin: 30mm 45mm 30mm 45mm;
+                padding: 30px 20px;
+                background-image: url("./../bgs 2/CV\ Templates\ BG-02.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         </style>
     </head>
     <body>
@@ -99,8 +110,8 @@
             </div> 
             <div class="row">
                 
-                <div class="col-sm-4">
-                    <div style="height: 130px;">
+                <div class="col-sm-4 page1left">
+                    <div>
                         <p class="sidebarcolored">
                             CONTACT
                         </p>
@@ -126,7 +137,7 @@
                         </div>
 
                     </div>
-                    <div style="height: 215px;">
+                    <div class="education">
                         <p class="sidebarcolored">
                             EDUCATION
                         </p>
@@ -143,23 +154,20 @@
                         
 
                     </div>
-                    <div>
+                    <div class="skills">
                         <p class="sidebarcolored">
                             SKILLS
                         </p>
-                        <div style="padding-left: 20px;">
-                            <p style="font-size: 10px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                        </div>
                         
                         <p style="font-size: 11px; margin-bottom: 1px; text-align: left; padding-left: 20px">
                             SKILL # 1
                             <br/>
-                            <progress value="60" max="100"></progress>
+                            <progress value="90" max="100"></progress>
                         </p>
                         <p style="font-size: 11px; margin-bottom: 1px; text-align: left; padding-left: 20px">
                             SKILL # 2
                             <br/>
-                            <progress value="60" max="100"></progress>
+                            <progress value="70" max="100"></progress>
                         </p>
                         <p style="font-size: 11px; margin-bottom: 1px; text-align: left; padding-left: 20px">
                             SKILL # 3
@@ -169,7 +177,7 @@
                         <p style="font-size: 11px; margin-bottom: 1px; text-align: left; padding-left: 20px">
                             SKILL # 4
                             <br/>
-                            <progress value="60" max="100"></progress>
+                            <progress value="80" max="100"></progress>
                         </p>
 
                     </div>
@@ -177,8 +185,8 @@
     
                         
                 </div>
-                <div class="col-sm-8" style="padding-left: 28px;">
-                    <div style="height: 370px;">
+                <div class="col-sm-8 page1right" style="padding-left: 28px;">
+                    <div class="work">
                         <h2 class="mainbarcolored" style="font-size: 18px; margin-bottom: 8px;"><b>WORK EXPERIENCE</b></h2>
                         <div>
                             <p style="font-size: 13px; text-align: justify; padding-left: 28px; color: #fdc415; margin-bottom: 3px;">COMPANY NAME / JOB POSITION</p>
@@ -188,20 +196,24 @@
                         </div>
                         <div>
                             <p style="font-size: 13px; text-align: justify; padding-left: 28px; color: #fdc415; margin-bottom: 3px;">COMPANY NAME / JOB POSITION</p>
-                            <p style="font-size: 10px; text-align: justify; margin-left: 28px; color: #ffffff; border-bottom: 2px #fdc415 solid; margin-bottom: 2px; width: 100px;">2013 - 2018</p>
+                            <p style="font-size: 10px; text-align: justify; margin-left: 28px; color: #ffffff; border-bottom: 2px #fdc415 solid; margin-bottom: 2px; width: 100px;">2010 - 2013</p>
                             <p style="font-size: 9px; text-align: justify; padding-left: 28px; color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis atque animi accusantium quo ipsa, perferendis commodi adipisci! Quo delectus accusantium ipsam architecto, autem corrupti porro, fugit deserunt repellat laboriosam at!</p>
     
                         </div>
                         <div>
                             <p style="font-size: 13px; text-align: justify; padding-left: 28px; color: #fdc415; margin-bottom: 3px;">COMPANY NAME / JOB POSITION</p>
-                            <p style="font-size: 10px; text-align: justify; margin-left: 28px; color: #ffffff; border-bottom: 2px #fdc415 solid; margin-bottom: 2px; width: 100px;">2018 - PRESENT</p>
+                            <p style="font-size: 10px; text-align: justify; margin-left: 28px; color: #ffffff; border-bottom: 2px #fdc415 solid; margin-bottom: 2px; width: 100px;">2010 - 2013</p>
                             <p style="font-size: 9px; text-align: justify; padding-left: 28px; color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis atque animi accusantium quo ipsa, perferendis commodi adipisci! Quo delectus accusantium ipsam architecto, autem corrupti porro, fugit deserunt repellat laboriosam at!</p>
     
                         </div>
 
                     </div>
-                    <div style="height: 120px;">
+                    <div class="reference">
                         <h2 class="mainbarcolored" style="font-size: 18px; margin-bottom: 8px;"><b>REFERENCES</b></h2>
+                        <div>
+                            <p style="font-size: 9px; text-align: justify; padding-left: 28px; color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis atque animi accusantium quo ipsa, perferendis commodi adipisci!</p>
+    
+                        </div>
                         <div>
                             <p style="font-size: 9px; text-align: justify; padding-left: 28px; color: #ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis atque animi accusantium quo ipsa, perferendis commodi adipisci!</p>
     
@@ -209,17 +221,18 @@
                         
                         
                     </div>
-                    <div>
+                    <div class="info">
                         <p style="font-size: 12px; padding-left: 22px; padding-top: 3px; font-weight: bold;">
-                            <span style="padding-right: 20px; font-size: 10px;">
+                            <span style="padding-right: 20px; font-size: 10px; background-color: #ffffff;">
                                 FOLLOW ME @YOURUSER
 
                             </span>
-                            <i class="fa fa-facebook" style="color:#333333;"></i>
+                            &nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-facebook" style="color:#fdc415;"></i>
                             &nbsp;
-                            <i class="fa fa-linkedin" style="color:#333333"></i>
+                            <i class="fa fa-linkedin" style="color:#fdc415"></i>
                             &nbsp;
-                            <i class="fa fa-twitter" style="color:#333333"></i>
+                            <i class="fa fa-twitter" style="color:#fdc415"></i>
                         </p>
                         
 
@@ -230,6 +243,141 @@
             
           </div>
     
-    </body>
+          <div class="container page-2-content">
+            
+            <div class="row">
+                <div class="col-sm-4 page2left">
+                    <div class="more"></div>
+                    <div class="moreContent"></div>
+                    
+                </div>
+                <div class="col-sm-8 page2right" style="padding-left: 28px;">
+                    <div class="moreValues"></div>
+                    <div class="moreData"></div>
+                
+                </div>
 
+            </div>
+
+          </div>
+    </body>
+    <script>
+        const page1right = document.querySelector('.page1right');
+        const work = document.querySelector('.work');
+        const reference = document.querySelector('.reference');
+        const info = document.querySelector('.info');
+		const page2right = document.querySelector('.page2right');
+        var page2Content = document.querySelector('.page-2-content');
+		const list = page1right.querySelector('.work');
+		const listItems = list.getElementsByTagName('div');
+		const numItems = listItems.length;
+		const pageHeight = page1right.offsetHeight;
+		const maxPageHeight = 750; // Max height of page 1
+        console.log(listItems);
+        
+		let totalHeight = 300;
+        let check = false;
+		for (let i = numItems - 1; i >= 0; i--) {
+            const li = listItems[i];
+			totalHeight += li.offsetHeight;
+            // console.log(totalHeight);
+			if (totalHeight > maxPageHeight) {
+                check = true;
+                // console.log(li);
+				page2right.querySelector('.moreValues').prepend(li);
+                page2Content.style.opacity = 1;
+			}
+		}
+        console.log((work.offsetHeight + 300) + reference.offsetHeight);
+        if(check && (work.offsetHeight + 300) + reference.offsetHeight > 750){
+            page2Content.style.opacity = 1;
+            page2right.querySelector('.moreData').append(reference)
+            page2right.querySelector('.moreData').append(info)
+        }
+        else{
+            const listItems2 = reference.getElementsByTagName('div');
+            const numItems2 = listItems2.length;
+		    const pageHeight = page1right.offsetHeight;
+		    const maxPageHeight = 750; // Max height of page 1
+            
+		    let totalHeight = 300 + work.offsetHeight;
+            console.log('@@@@@@@@@@@@@@@@@@@@@@@',totalHeight);
+            if(totalHeight>750){
+                page2right.querySelector('.moreData').append(reference)
+                page2right.querySelector('.moreData').append(info)
+                page2Content.style.opacity = 1;
+            }else{
+                for (let i = numItems2 - 1; i >= 0; i--) {
+                    const li = listItems2[i];
+                    totalHeight += li.offsetHeight;
+
+                    if (totalHeight > maxPageHeight) {
+                        
+                        page2right.querySelector('.moreData').prepend(li);
+                        page2Content.style.opacity = 1;
+                        page2right.querySelector('.moreData').append(info)
+                    }
+                }
+            }
+        }
+            
+    </script>
+    <script>
+        const page1left = document.querySelector('.page1left');
+        const education = document.querySelector('.education');
+        const skills = document.querySelector('.skills');
+		const page2left = document.querySelector('.page2left');
+        var page2Content = document.querySelector('.page-2-content');
+		const list2 = page1left.querySelector('.education');
+		const listItems2 = list2.getElementsByTagName('div');
+		const numItems2 = listItems2.length;
+		const pageHeight2 = page1left.offsetHeight;
+		const maxPageHeight2 = 750; // Max height of page 1
+        console.log(listItems);
+        
+		let totalHeight2 = 400;
+        let check2 = false;
+		for (let i = numItems2 - 1; i >= 0; i--) {
+            const li = listItems2[i];
+			totalHeight2 += li.offsetHeight;
+            // console.log(totalHeight);
+			if (totalHeight2 > maxPageHeight2) {
+                check2 = true;
+                // console.log(li);
+				page2left.querySelector('.more').prepend(li);
+                page2Content.style.opacity = 1;
+			}
+		}
+        console.log((education.offsetHeight + 400) + skills.offsetHeight);
+        if(check && (education.offsetHeight + 400) + skills.offsetHeight > 750){
+            page2Content.style.opacity = 1;
+            page2left.querySelector('.moreContent').append(skills)
+        }
+        else{
+            const listItems2 = skills.getElementsByTagName('div');
+            const numItems2 = listItems2.length;
+		    const pageHeight = page1left.offsetHeight;
+		    const maxPageHeight = 750; // Max height of page 1
+            
+		    let totalHeight = 400 + education.offsetHeight;
+            console.log('@@@@@@@@@@@@@@@@@@@@@@@',totalHeight);
+            if(totalHeight>750){
+                page2left.querySelector('.moreContent').append(skills)
+                page2Content.style.opacity = 1;
+            }else{
+                for (let i = numItems2 - 1; i >= 0; i--) {
+                    const li = listItems2[i];
+                    totalHeight += li.offsetHeight;
+
+                    if (totalHeight > maxPageHeight) {
+                        
+                        page2left.querySelector('.moreContent').prepend(li);
+                        page2Content.style.opacity = 1;
+                    }
+                }
+            }
+        }
+            
+    </script>
+   
 </html>
